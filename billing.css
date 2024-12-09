@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    user-select: none;
+  }
+  img{
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  h1{
+    margin: 0;
+
+  }
+  h2, h3 {
+    margin: 0;
+  }
+  td {
+    background-color: white;
+    color: black;
+  }
+  
+  .invoice-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f05e8a;
+    padding-bottom: 20px;
+  }
+  
+  .logo h1 {
+    font-size: 28px;
+    color: #f05e8a;
+}
+  
+  .invoice-title h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .invoice-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .details {
+    width: 48%;
+  }
+  
+  .details h3 {
+    font-size: 18px;
+    color: #f05e8a;
+    margin-bottom: 10px;
+  }
+  
+  .details p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .invoice-table thead {
+    background-color: #f05e8a;
+    color: #fff;
+  }
+  
+  .invoice-table th, .invoice-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .invoice-table th {
+    font-weight: 600;
+  }
+  
+  .invoice-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .invoice-total {
+    text-align: right;
+    margin: 20px 0;
+  }
+  
+  .invoice-total h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .invoice-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .invoice-footer p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .btn {
+    background-color: #f05e8a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #f03f74;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .invoice-details {
+      flex-direction: column;
+    }
+  
+    .details {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
