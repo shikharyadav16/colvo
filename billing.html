@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billing Section</title>
+  <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+  <div class="invoice-container">
+    <header class="invoice-header">
+      <div class="logo">
+        <h1>Colvo&trade;</h1>
+      </div>
+      <div class="invoice-title">
+        <h2>Invoice</h2>
+        <p>#<span id="invoice-number"></span></p>
+      </div>
+    </header>
+
+    <section class="invoice-details">
+      <div class="details">
+        <h3>Issued By:</h3>
+        <p>
+          <strong><img src="/Cool Text - Colvo 471412821286519.png" alt=""></strong><br>
+          Kanpur, Uttar Pradesh, Inida<br>
+          Email: contact@colvo.com<br>
+          Phone: +91 9026414642
+        </p>
+      </div>
+      <div class="details">
+        <h3>Bill To:</h3>
+        <p id="client-details">
+          Client Name: XYZ<br>
+          Client Address, Kanpur, India<br>
+          Email: client@gmail.com
+        </p>
+      </div>
+    </section>
+
+    <table class="invoice-table">
+      <thead>
+        <tr class="table-head">
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="invoice-items">
+        <tr>
+          <td>Blue Jeans</td>
+          <td>1</td>
+          <td>$18</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="invoice-total">
+      <h3>Total Amount: <span id="invoice-total">$0.00</span></h3>
+    </div>
+
+    <footer class="invoice-footer">
+      <p>Thank you for your business!</p>
+      <button class="btn" onclick="window.print()">Print Invoice</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const invoice = document.getElementById('invoice-number');
+    invoice.innerText = Math.floor(Math.random()*100000); 
+  </script>
+</body>
+</html>
